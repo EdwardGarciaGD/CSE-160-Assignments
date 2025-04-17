@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Assignment 1</title>
+    </head>
+    
+    <body onload="main()">
+        <canvas id="webgl" width="400" height="400">
+            Please use a browser that supports "canvas"
+        </canvas>
+        
+        <br>
+        <button type="button" id="Clear">Clear Canvas</button>
+        <button type="button" id="drawing">Drawing</button>
+
+        <br><br>
+        Drawing Mode:
+        <br>
+        <button type="button" id="point">Point</button>
+        <button type="button" id="triangle">Triangle</button> 
+        <button type="button" id="circle">Circle</button> 
+        <br>
+
+        <br>
+        Shape Color:
+        <br>
+        Red <input type="range" min="0" max="100" value="100" class="slider" id="rSlide">
+        Green <input type="range" min="0" max="100" value="100" class="slider" id="gSlide">
+        Blue <input type="range" min="0" max="100" value="100" class="slider" id="bSlide">
+
+        <br>
+        Shape Size: <input type="range" min="5" max="50" value="5" class="slider" id="sizeSlide">
+        <br>
+        Segment Count (Circle Only): <input type="range" min="8" max="30" value="8" class="slider" id="segSlide">
+        
+        <script src="lib/webgl-utils.js"></script>
+        <script src="lib/webgl-debug.js"></script>
+        <script src="lib/cuon-utils.js"></script>
+        <script src="Point.js"></script>
+        <script src="Triangle.js"></script>
+        <script src="Circle.js"></script>
+        <script src="Assignment1.js"></script>
+    </body>
+</html>
