@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Assignment 4</title>
+    </head>
+    
+    <body onload="main()">
+        <canvas id="webgl" width="600" height="550">
+            Please use a browser that supports "canvas"
+        </canvas>
+        <br>
+        Blocky World With Lighting
+        <br>
+        <p id="numdot"> XXX </p>
+
+        <button type="button" id="normalOn">Normal On</button>
+        <button type="button" id="normalOff">Normal Off</button>
+        <br><br>
+        <button type="button" id="lightOn">Light On</button>
+        <button type="button" id="lightOff">Light Off</button>
+        <br>
+        <button type="button" id="animLightOn">Light Animation On</button>
+        <button type="button" id="animLightOff">Light Animation Off</button>
+        <br><br>
+        Camera Angle: <input type="range" min="0" max="360" value="0" class="slider" id="anglSlide">
+        <br>
+        Light X: <input type="range" min="-250" max="450" value="0" class="slider" id="lightXSlide">
+        Light Y: <input type="range" min="-250" max="450" value="1" class="slider" id="lightYSlide">
+        Light Z: <input type="range" min="-250" max="450" value="3" class="slider" id="lightZSlide">
+        <br>
+        Red Light: <input type="range" min="0" max="200" value="200" class="slider" id="redColorSlide">
+        Green Light: <input type="range" min="0" max="200" value="200" class="slider" id="greenColorSlide">
+        Blue Light: <input type="range" min="0" max="200" value="200" class="slider" id="blueColorSlide">
+        
+        <script src="lib/webgl-utils.js"></script>
+        <script src="lib/webgl-debug.js"></script>
+        <script src="lib/cuon-utils.js"></script>
+        <script src="lib/cuon-matrix-cse160.js"></script>
+        <script src="Point.js"></script>
+        <script src="Triangle.js"></script>
+        <script src="Circle.js"></script>
+        <script src="Cube.js"></script>
+        <script src="Camera.js"></script>
+        <script src="Sphere.js"></script>
+        <script src="Assignment4.js"></script>
+    </body>
+</html>
