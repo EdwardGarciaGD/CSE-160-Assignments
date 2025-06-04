@@ -237,11 +237,11 @@ function setUpScene()
     const lampPosX = 70;
     const lampPosz = -20;
     const objLoader = new OBJLoader();
-    const mtlLoader = new MTLLoader().load('assets/models/streetLamp/streetLamp.mtl', (mtl) => 
+    const mtlLoader = new MTLLoader().load('assets/models/streetLamp/StreetLamp.mtl', (mtl) => 
     {
       mtl.preload();
       objLoader.setMaterials(mtl);
-      objLoader.load('assets/models/streetLamp/streetLamp.obj', (root) => 
+      objLoader.load('assets/models/streetLamp/StreetLamp.obj', (root) => 
       { 
         objLoader.materials.materials.Glass.color.set(0xffffff);
         scene.add(root); 
